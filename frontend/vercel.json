@@ -1,8 +1,5 @@
 {
   "buildCommand": "npm install --legacy-peer-deps && npm run build",
   "outputDirectory": "build",
-  "installCommand": "npm install --legacy-peer-deps",
-  "env": {
-    "REACT_APP_API_URL": "@react-app-api-url"
-  }
+  "installCommand": "npm install --legacy-peer-deps"
 }
