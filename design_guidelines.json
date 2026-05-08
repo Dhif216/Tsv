@@ -1,0 +1,98 @@
+{
+  "theme": "LIGHT/DARK",
+  "archetype": "4 (Swiss & High-Contrast)",
+  "rationale": "Perfect for warehouse environment where function and clarity are paramount. High contrast aids legibility for workers using mobile devices in varying lighting conditions.",
+  "typography": {
+    "heading_font": "Manrope",
+    "body_font": "IBM Plex Sans",
+    "scale": {
+      "h1": "text-4xl sm:text-5xl tracking-tight leading-none",
+      "h2": "text-2xl sm:text-3xl tracking-tight",
+      "h3": "text-xl sm:text-2xl",
+      "h4": "text-lg sm:text-xl",
+      "body": "text-base sm:text-lg leading-relaxed",
+      "small": "text-sm",
+      "label": "text-xs tracking-[0.2em] uppercase font-bold"
+    }
+  },
+  "colors": {
+    "primary": {
+      "light": "#FFCC00",
+      "dark": "#FFD633",
+      "description": "Safety Yellow / Warning Yellow. High visibility for primary CTAs. Text on this should be stark black."
+    },
+    "secondary": {
+      "light": "#0033CC",
+      "dark": "#3366FF",
+      "description": "International Klein Blue. For secondary actions, charts, and trust elements."
+    },
+    "accent": {
+      "light": "#E60000",
+      "dark": "#FF3333",
+      "description": "Signal Red. For high severity feedback, errors, and alerts."
+    },
+    "background": {
+      "light": "#F8F9FA",
+      "dark": "#121212"
+    },
+    "surface": {
+      "light": "#FFFFFF",
+      "dark": "#1E1E1E"
+    },
+    "text": {
+      "light": "#1A1A1A",
+      "dark": "#EAEAEA"
+    },
+    "border": {
+      "light": "#E5E7EB",
+      "dark": "#2D3748"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous Spacing Philosophy with large touch targets for warehouse workers.",
+    "container_padding": "p-6 md:p-8",
+    "gap": "gap-6 md:gap-8",
+    "border_radius": "rounded-lg",
+    "button_size": "min-h-[56px] px-8 py-4",
+    "grid_modes": {
+      "dashboard": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+      "form": "grid-cols-1 gap-8 max-w-2xl mx-auto"
+    }
+  },
+  "components": {
+    "buttons": "Large touch area (min-h-14). Solid fill for primary (Safety Yellow), outline for secondary. High contrast text (black text on yellow).",
+    "inputs": "Large padding (p-4), clear borders (border-border), distinct focus ring (focus:ring-2 focus:ring-secondary/50).",
+    "cards": "Flat background, 1px subtle border, no shadow by default. Hover: slight lift and shadow.",
+    "navigation": "Sticky top nav for workers (mobile-first), collapsible sidebar for admin dashboard. Glassmorphism effect on scroll.",
+    "charts": "Recharts or Shadcn Charts. Use high contrast colors (Blue, Yellow, Red) for clarity. Accessible patterns."
+  },
+  "motion": {
+    "hover": "transition-transform duration-200 ease-in-out hover:-translate-y-1 hover:shadow-md",
+    "page_transition": "opacity fade-in duration-300",
+    "form_interaction": "micro-interactions on checkbox/radio selections for tactile feedback"
+  },
+  "accessibility": {
+    "contrast": "Minimum 4.5:1 for standard text, 3:1 for large text. Black text on Safety Yellow background.",
+    "focus": "focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary",
+    "test_ids": "All interactive elements MUST have data-testid (e.g., submit-feedback-btn, category-select)."
+  },
+  "media": {
+    "hero_image_login": {
+      "url": "https://images.unsplash.com/photo-1740914994657-f1cdffdc418e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHwxfHx3YXJlaG91c2UlMjBsb2dpc3RpY3MlMjB3b3JrZXJ8ZW58MHx8fHwxNzc4MTk0NDUyfDA&ixlib=rb-4.1.0&q=85",
+      "description": "A yellow forklift in a large warehouse. Use with heavy dark overlay (bg-black/70) for text legibility on login/landing page."
+    },
+    "background_texture": {
+      "url": "https://images.unsplash.com/photo-1764344829291-372f6cdf908a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxzYWZldHklMjB5ZWxsb3clMjB3YXJlaG91c2UlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3ODE5NDQ1MXww&ixlib=rb-4.1.0&q=85",
+      "description": "Safety yellow textured surface. Can be used as a subtle accent background for critical alert cards."
+    }
+  },
+  "instructions_to_main_agent": [
+    "Build the worker form mobile-first with extremely clear, large inputs. Do not clutter the screen.",
+    "Implement light and dark mode. Ensure Safety Yellow remains high contrast in both.",
+    "For the admin dashboard, utilize Shadcn tables, charts, and cards. Use a clean Swiss layout (Archetype 4) - data density but well aligned.",
+    "Ensure the feedback form supports Finnish (FI) and English (EN) toggle.",
+    "Add 'data-testid' to all form fields, buttons, and filters.",
+    "Do NOT use placeholder images. Use the provided media URLs.",
+    "Follow 'Grid Borders' micro-theme for the dashboard cards to expose the structure."
+  ]
+}
